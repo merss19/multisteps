@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/modules/SignUp/containers/Step2/selectors.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\..\index.html">All files</a> / <a href="index.html">src/modules/SignUp/containers/Step2</a> selectors.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45.45% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {createSelector} from 'reselect'
+&nbsp;
+const programs = state =&gt; state.registration.signUp.get('programs')
+const choosenPr<span class="fstat-no" title="function not covered" >og</span>ram = state =&gt; st<span class="cstat-no" title="statement not covered" >ate.registration.stepTwo.get('choosenProgram')</span>
+const choosenPackageT<span class="fstat-no" title="function not covered" >yp</span>e = state =&gt; stat<span class="cstat-no" title="statement not covered" >e.registration.stepTwo.get('choosenPackageType')</span>
+const packages = state =&gt;<span class="fstat-no" title="function not covered" > s</span>tate.registration<span class="cstat-no" title="statement not covered" >.stepTwo.get('packages')</span>
+const promo = s<span class="fstat-no" title="function not covered" >ta</span>te =&gt; state.regis<span class="cstat-no" title="statement not covered" >tration.stepTwo.get('promo')</span>
+const promoE<span class="fstat-no" title="function not covered" >rr</span>or = state =&gt; sta<span class="cstat-no" title="statement not covered" >te.registration.stepTwo.get('promoError')</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+export const selectPromoError = createSelector(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+	promoError,<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+	(promoError) =&gt; promoError<span class="fstat-no" title="function not covered" ></span>
+)<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+export c<span class="cstat-no" title="statement not covered" >onst selectPromo = createSelector(</span>
+	promo,<span class="cstat-no" title="statement not covered" ></span>
+	(promo) =&gt; promo
+)<span class="cstat-no" title="statement not covered" ></span>
+export const<span class="cstat-no" title="statement not covered" > selectPrograms = createSelector(</span>
+	programs,
+	choosen<span class="cstat-no" title="statement not covered" >Program,</span>
+	(programs, choosenProgram) =&gt; {
+		pr<span class="cstat-no" title="statement not covered" >ograms = programs.map(pr</span>ogram =&gt; {
+			if (program.get('id') % 4 == 1) {
+				return program.set('isActive', true)<span class="fstat-no" title="function not covered" ></span>
+			}<span class="cstat-no" title="statement not covered" ></span>
+			if (p<span class="cstat-no" title="statement not covered" >rogram.get('i</span>d') == choosenProgram) {
+				return program.set('isActive', true)
+			}<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+			retur<span class="cstat-no" title="statement not covered" >n program</span>
+		})<span class="cstat-no" title="statement not covered" ></span>
+		return programs.toJS()
+	}<span class="cstat-no" title="statement not covered" ></span>
+)
+<span class="cstat-no" title="statement not covered" ></span>
+export const selectPackages = createSelector(
+	packages,<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+	choosenPackageType,<span class="fstat-no" title="function not covered" ></span>
+	(packages, choosenPackageType) =&gt; {
+		if<span class="cstat-no" title="statement not covered" > (!packages.toJS(<span class="fstat-no" title="function not covered" >).</span>length) {</span>
+			retur<span class="cstat-no" title="statement not covered" >n null</span>
+		}<span class="cstat-no" title="statement not covered" ></span>
+		packages = packages.map(pt =&gt; {
+			if (pt.get('id') == choosenPackageType) {
+<span class="cstat-no" title="statement not covered" >				return pt.set('isAct</span>ive', true)
+			}
+			return pt<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+		})
+		return packages.toJS()
+	}
+)
+&nbsp;
+export const selectChoosenProgram = createSelector(
+	choosenProgram,
+	(choosenProgram) =&gt; choosenProgram
+)
+export const selectPackage = createSelector(
+	choosenPackageType,
+	packages,
+	(choosenPackageType, packages) =&gt; {
+		let packageItem
+		packages.forEach( item =&gt; {
+			if (item.get('id') == choosenPackageType) {
+				packageItem = item.toJS()
+			}
+		})
+		return packageItem
+	}
+)
+export const selectPackageType = createSelector(
+	choosenPackageType,
+	(choosenPackageType) =&gt; choosenPackageType
+)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 26 2017 18:45:24 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="..\..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\..\sorter.js"></script>
+</body>
+</html>

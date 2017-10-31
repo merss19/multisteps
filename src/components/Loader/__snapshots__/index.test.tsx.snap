@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Loader renders correctly 1`] = `
+<div
+  className="text-center"
+>
+  <h2
+    className="pt20"
+  >
+    Подождите
+  </h2>
+  <div
+    className="loader loader--main"
+  />
+</div>
+`;

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/modules/ProfilePasswordForget/selectors.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/modules/ProfilePasswordForget</a> selectors.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.57% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/28</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.43% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/21</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {createSelector} from 'reselect'
+&nbsp;
+const profilePassword = state =&gt; state.profilePassword
+const isFetching = sta<span class="fstat-no" title="function not covered" >te</span> =&gt; profilePasswo<span class="cstat-no" title="statement not covered" >rd(state).get('isFetching')</span>
+const isLoad = st<span class="fstat-no" title="function not covered" >at</span>e =&gt; profilePassw<span class="cstat-no" title="statement not covered" >ord(state).get('isLoad')</span>
+const isError<span class="fstat-no" title="function not covered" > =</span> state =&gt; profile<span class="cstat-no" title="statement not covered" >Password(state).get('isError')</span>
+const resultTe<span class="fstat-no" title="function not covered" >xt</span> = state =&gt; profi<span class="cstat-no" title="statement not covered" >lePassword(state).get('data').get('resultText'</span>)
+const resultCode <span class="fstat-no" title="function not covered" >= </span>state =&gt; profileP<span class="cstat-no" title="statement not covered" >assword(state).get('data').get('resultCode')</span>
+const errorMessag<span class="fstat-no" title="function not covered" >e </span>= state =&gt; profil<span class="cstat-no" title="statement not covered" >ePassword(state).get('data').get('errorMessage')</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+export const selectIsFetching = createSelector(<span class="fstat-no" title="function not covered" ></span>
+	isF<span class="cstat-no" title="statement not covered" >etching,</span>
+	(isFetching) =&gt; {
+		return isFetching<span class="fstat-no" title="function not covered" ></span>
+	}<span class="cstat-no" title="statement not covered" ></span>
+)
+export const selectIsLoad = createSelector(<span class="fstat-no" title="function not covered" ></span>
+	isL<span class="cstat-no" title="statement not covered" >oad,</span>
+	(isLoad) =&gt; {
+		return isLoad<span class="fstat-no" title="function not covered" ></span>
+	}<span class="cstat-no" title="statement not covered" ></span>
+)
+export const selectIsError = createSelector(<span class="fstat-no" title="function not covered" ></span>
+	isE<span class="cstat-no" title="statement not covered" >rror,</span>
+	(isError) =&gt; {
+		return isError<span class="fstat-no" title="function not covered" ></span>
+	}<span class="cstat-no" title="statement not covered" ></span>
+)
+&nbsp;
+export const selectResultText = createSelector(
+	resultText,
+	(resultText) =&gt; {
+		return resultText
+	}
+)
+export const selectResultCode = createSelector(
+	resultCode,
+	(resultCode) =&gt; {
+		return resultCode
+	}
+)
+export const selectErrorMessage = createSelector(
+	errorMessage,
+	(errorMessage) =&gt; {
+		return errorMessage
+	}
+)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 26 2017 18:37:45 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/CheckboxInput/index.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/CheckboxInput</a> index.tsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.64% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.59% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">51.52% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>17/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as React from 'react'
+import {WrappedFieldProps} from 'redux-form'
+import {Link} from 'react-router'
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-2 cbranch-no" title="branch not covered" ><span class="branch-1 cbranch-no" title="branch not covered" ></span></span></span></span>
+interfac<span class="fstat-no" title="function not covered" ><span class="branch-3 cbranch-no" title="branch not covered" >e </span>OwnProps extends<span class="cstat-no" title="statement not covered" > WrappedFieldProp<span class="cstat-no" title="statement not covered" >s&lt;{}&gt; {<span class="cstat-no" title="statement not covered" ></span></span></span></span>
+	name: string
+	id: string
+	title: string
+	isTest?: any<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+}
+&nbsp;
+class CheckboxInput extends React.Component&lt;OwnProps, {}&gt; {<span class="fstat-no" title="function not covered" ><span class="branch-3 cbranch-no" title="branch not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" ></span>
+	static <span class="cstat-no" title="statement not covered" >defaultProps = {</span>
+		checke<span class="cstat-no" title="statement not covered" >d: false,<span class="cstat-no" title="statement not covered" ></span></span>
+		isTest: fa<span class="cstat-no" title="statement not covered" >lse</span>
+	}
+<span class="cstat-no" title="statement not covered" ></span>
+	componentWillMount() {
+		const { input, isTest} = this.props
+		if (isTest) {
+			const  checkbox: any  = isTest
+			if (input) {
+				input.onChange(checkbox)
+			}<span class="fstat-no" title="function not covered" ></span>
+		}<span class="cstat-no" title="statement not covered" ></span>
+	}
+<span class="fstat-no" title="function not covered" ></span>
+	render() {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span>
+		const <span class="cstat-no" title="statement not covered" >{input, title, id, meta: {touched, error}} = this.props</span>
+		const  value = input ? in<span class="cstat-no" title="statement not covered" >put.val</span>ue : false
+		return (<span class="cstat-no" title="statement not covered" ></span>
+			&lt;div classNam<span class="cstat-no" title="statement not covered" >e='checkboxes__item'&gt;</span>
+				&lt;span className='checkbox'&gt;
+					&lt;label className='checkbox__label' htmlFor={id}&gt;
+						&lt;input {...input} className='checkbox__field'  checked={value} id={id} type='checkbox'/&gt;
+						&lt;span className='checkbox__ph'&gt;<span class="fstat-no" title="function not covered" ></span>
+						&lt;svg classN<span class="cstat-no" title="statement not covered" >ame='svg ic</span>o-tick'&gt;<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span></span></span>
+							&lt;use xlinkHre<span class="cstat-no" title="statement not covered" >f='#ico-tick' /&gt;</span>
+						&lt;/<span class="cstat-no" title="statement not covered" >svg&gt;</span>
+				 &lt;/span&gt;
+					&lt;div className='checkbox__group'&gt;
+						&lt;span className='checkbox__title'&gt;{title}&lt;/span&gt;
+							&lt;Link
+								target='_blank'
+								className='checkbox__link'
+								to='http://todayme.ru/dogovor-oferty#.WGFQqrZ95E4'
+							&gt;
+								оферты
+							&lt;/Link&gt;
+							&lt;span className='checkbox__divider'&gt;и&lt;/span&gt;
+							&lt;Link
+								target='_blank'
+								className='checkbox__link'
+								to='https://todayme.ru/rules.pdf'
+							&gt;
+								правил
+							&lt;/Link&gt;
+					&lt;/div&gt;
+				&lt;/label&gt;
+				&lt;/span&gt;
+				{touched &amp;&amp; error &amp;&amp; &lt;span className='checkbox__error'&gt;{error}&lt;/span&gt;}
+			&lt;/div&gt;
+&nbsp;
+		)
+	}
+}
+export default CheckboxInput</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 26 2017 18:45:24 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

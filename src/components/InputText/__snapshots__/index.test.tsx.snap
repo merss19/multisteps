@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component InputText renders correctly 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__field"
+    placeholder="Ваш email"
+    type="text"
+  />
+</div>
+`;

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/modules/SignUp/containers/Step3/selectors.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\..\index.html">All files</a> / <a href="index.html">src/modules/SignUp/containers/Step3</a> selectors.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">47.62% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">71.43% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/14</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {createSelector} from 'reselect'
+&nbsp;
+const programs = state =&gt; state.registration.signUp.get('programs')
+const choosenPr<span class="fstat-no" title="function not covered" >og</span>ram = state =&gt; st<span class="cstat-no" title="statement not covered" >ate.registration.stepTwo.get('choosenProgram')</span>
+const packageTypes = <span class="fstat-no" title="function not covered" >st</span>ate =&gt; state.regi<span class="cstat-no" title="statement not covered" >stration.stepTwo.get('packageTypes')</span>
+const choosenPackag<span class="fstat-no" title="function not covered" >eT</span>ype = state =&gt; st<span class="cstat-no" title="statement not covered" >ate.registration.stepTwo.get('choosenPackageType')</span>
+const payment = state =&gt; <span class="fstat-no" title="function not covered" >st</span>ate.registration.<span class="cstat-no" title="statement not covered" >stepTwo.get('payment')</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+export const selectProgram = createSelector(<span class="fstat-no" title="function not covered" ></span>
+	programs,
+	cho<span class="cstat-no" title="statement not covered" >osenProgram,<span class="fstat-no" title="function not covered" ></span></span>
+	(progra<span class="cstat-no" title="statement not covered" >ms, choosenProgram) =&gt; {</span>
+		let progra<span class="cstat-no" title="statement not covered" >m</span>
+		programs = programs.forEach(p =&gt; {
+			if (p.get('id') == choosenProgram) {
+<span class="cstat-no" title="statement not covered" >				program = p.toJS</span>()
+			}
+		})<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+		return program<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+	}
+)
+export const selectChoosenProgram = createSelector(
+	choosenProgram,
+	(choosenProgram) =&gt; choosenProgram
+)
+export const selectPayment = createSelector(
+	payment,
+	(payment) =&gt; payment.toJS()
+)</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Oct 26 2017 18:45:24 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="..\..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\..\sorter.js"></script>
+</body>
+</html>

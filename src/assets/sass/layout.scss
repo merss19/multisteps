@@ -1,0 +1,98 @@
+/** ===========================
+   App layout
+   =========================== **/
+
+.layout {
+  &--entry {
+    background-color: #fff;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: $max-content-width;
+    // padding: 30px 20px 0;
+    padding: 0 0 $mob-menu-height 0;
+
+  }
+
+  &__menu {
+    position: relative;
+
+    &.hide-menu {
+      display: none;
+
+
+      @include responsive(desk) {
+        .layout__menu-inner {
+          pointer-events: none;
+          transition: opacity 0.4s;
+          opacity: 0.35;
+        }
+
+        &::before {
+          content: "Упс, заполни личную анкету и этот функционал станет тебе доступен!";
+          opacity: 0;
+          text-align: center;
+          max-width: 200px;
+          width: 100%;
+          position: absolute;
+          left: 50%;
+          top: 20%;
+          transform: translateX(-50%);
+          transition: opacity 0.4s;
+        }
+
+        &:hover {
+          .layout__menu-inner {
+            opacity: 0;
+          }
+
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu-nav {
+    display: none;
+
+  }
+
+  &__menu-inner {
+    &.is-fixed {
+      position: fixed;
+      top: 30px;
+      z-index: 10;
+    }
+  }
+
+  &__content {
+  }
+}
+
+.layout__content {
+  .stage-box {
+    .stage-box__inner {
+        &:first-child {
+          padding-top: 20px;
+        }
+
+        &:last-child {
+          padding-bottom: 20px;
+        }
+
+
+      @include responsive(desk) {
+        &:first-child {
+          padding-top: 40px;
+        }
+
+        &:last-child {
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+}
