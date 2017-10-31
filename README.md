@@ -2,5 +2,5 @@
 
 ```bash
 MultiSteps
-react, redux, typesctipr
+react, redux, typescript
 ```
